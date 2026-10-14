@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vitrans"
+version = "0.1.0"
+description = "Công cụ dịch game indie sang tiếng Việt (RPG Maker MV/MZ, Ren'Py, JSON chung)"
+requires-python = ">=3.10"
+dependencies = ["PyQt6>=6.5", "requests>=2.28"]
+
+[project.optional-dependencies]
+fonts = ["fonttools"]
+dev = ["pytest"]
+
+[project.scripts]
+vitrans = "vitrans.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vitrans*"]

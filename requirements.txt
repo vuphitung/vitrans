@@ -1,0 +1,4 @@
+PyQt6>=6.5
+requests>=2.28
+# tùy chọn: kiểm tra font có đủ dấu tiếng Việt
+fonttools
